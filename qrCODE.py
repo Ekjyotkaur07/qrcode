@@ -9,7 +9,7 @@ def gen_qr():
     qr = qrcode.QRCode(
         version=1,
         box_size=10,
-        border=5
+        border=4
     )
 
     qr.add_data(data)
@@ -20,5 +20,6 @@ def gen_qr():
     img.save(filename + ".png")
 
     print("QR Code Generated Successfully")
+
 
 gen_qr()
