@@ -15,7 +15,7 @@ def gen_qr():
     qr.add_data(data)
     qr.make(fit=True)
 
-    img = qr.make_image(fill_color="black", back_color="white")
+    img = qr.make_image(fill_color="pink", back_color="white")
 
     img.save(filename + ".png")
 
@@ -23,3 +23,4 @@ def gen_qr():
 
 
 gen_qr()
+
